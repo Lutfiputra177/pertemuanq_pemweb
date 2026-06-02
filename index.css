@@ -1,0 +1,112 @@
+*,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(91, 112, 122);
+}
+
+header {
+    background-color: rgb(186, 186, 186);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+li:hover {
+    background-color: rgb(105, 144, 188);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+
+.gambar1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    flex-shrink: 0;
+}
+
+.gambar1 img {
+    width: 300px;
+    height: 350px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.perkenalan {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 125px;
+    min-height: calc(100vh - 80px);
+    position: relative;
+    overflow: hidden;
+}
+
+.perkenalan::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.perkenalan-content {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+}
+
+.perkenalan-greeting {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+}
+
+.perkenalan-name {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    color: rgb(0, 0, 0);
+    line-height: 1.15;
+    margin-bottom: 28px;
+    letter-spacing: -0.01em;
+}
+
+.perkenalan-desc {
+    color: rgb(0, 0, 0);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.97rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 44px;
+}
